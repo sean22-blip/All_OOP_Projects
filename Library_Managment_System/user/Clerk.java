@@ -1,14 +1,15 @@
-public class Security extends Staff {
+public class Clerk extends Staff {
+
 
     @Override
     public boolean can(String action){
         return false;
     }
-
-    public Security(String fullName, String username, String id, String address, String password, int age, int phone,
+    
+    public Clerk(String fullName, String username, String id, String address, String password, int age, int phone,
             double height, double salary) {
         super(fullName, username, id, address, password, age, phone, height, salary);
-         setFullName(fullName);
+        setFullName(fullName);
         setUsername(username);
         setStaffId(id);
         setAddress(address);
@@ -18,6 +19,4 @@ public class Security extends Staff {
         setHeight(height);
     }
 
-   
-   
 }

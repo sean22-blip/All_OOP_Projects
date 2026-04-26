@@ -8,7 +8,7 @@ public abstract class Staff implements Istaff {
     public abstract boolean can(String action);
 
 
-    public Staff(String fullName, String id, String address, String password, int age, int phone, double height,
+    public Staff(String fullName, String username, String id, String address, String password, int age, int phone, double height,
         double salary) {
         // === we do not need this because we do not want generic staff like Staff s1 = new Staff(); ====
         // this.salary = salary;
@@ -22,7 +22,6 @@ public abstract class Staff implements Istaff {
         setFullName(fullName);
         setUsername(username);
         setStaffId(id);
-        // setSalary(salary);
         setAddress(address);
         setPassword(password);
         setPhone(password);
@@ -43,57 +42,32 @@ public abstract class Staff implements Istaff {
             
 
   
-    public void setFullName(String fullName) {
+    protected void setFullName(String fullName) {
         this.fullName = fullName;
     }
-
-
-
-    public void setUsername(String username) {
+    protected void setUsername(String username) {
         this.username = username;
     }
-
-
-
-    public void setStaffId(String staffId) {
+    protected void setStaffId(String staffId) {
         this.staffId = staffId;
     }
-
-
-
-    public void setAddress(String address) {
+    protected void setAddress(String address) {
         this.address = address;
     }
-
-
-
-    public void setPassword(String password) {
+    protected void setPassword(String password) {
         this.password = password;
     }
-
-
-
-    public void setPhone(String phone) {
+    protected void setPhone(String phone) {
         this.phone = phone;
     }
-
-
-
-    public void setAge(int age) {
+    protected void setAge(int age) {
         this.age = age;
     }
-
-
-
-    public void setHeight(double height) {
+    protected void setHeight(double height) {
         this.height = height;
     }
-
-
-
     // handle login
     public boolean checkPassword(String input) {
         return password != null && password.equals(input);
     }
-
 }
