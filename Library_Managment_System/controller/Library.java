@@ -26,7 +26,7 @@ public class Library {
     ArrayList<InventoryOfBooks> books = new ArrayList<>();
     ArrayList<Customer> customers = new ArrayList<>();
 
-    protected void createStaff(){};
+    protected void createStaff(){  };
     protected void createCustomer(){};
     protected void createMenuItem(){};
     protected void createOrder(){};

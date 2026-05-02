@@ -32,10 +32,7 @@ public abstract class Staff implements Istaff {
     public int getAge() {return age;}
     public double getHeight() {return height;}
     public double getSalary() {return salary;}
-    public boolean isActive() {return isActive;}
-            
-
-  
+    public boolean isActive() {return isActive;}                             
     protected void setFullName(String fullName) {
         this.fullName = fullName;
     }
